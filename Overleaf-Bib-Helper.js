@@ -300,7 +300,7 @@ function getArticleIDListDBLP(query, resultCount) {
 
 function getBibTexURLDBLP(publicationURL) {
     let path = publicationURL.split("/rec/")[1].split(".html")[0];
-    return `${dblpOrigin}/rec/${path}.bib`;
+    return `${dblpOrigin}/rec/${path}.bib?param=0`;
 }
 
 function getBibTexDBLP(publicationURL) {
